@@ -1,0 +1,210 @@
+
+
+.btn-login {
+    font-size: 16px;
+    padding: 10px 20px;
+    color: #FFF;
+    border: 2px solid #4c56c0;
+    box-shadow: none !important;
+}
+
+.MuiFormControl-root {
+    width: 100%;
+}
+
+.MuiInputBase-input {
+    padding: 6px 15px 4px;
+    font-size: 13px;
+    height: 34px;
+    background-color: #FFF;
+}
+
+.box-shadow {
+    box-shadow: 0px 1px 10px 1px rgb(0 0 0 / 22%);
+}
+
+.headerbox {
+    height: 200px;
+    width: 100%;
+    background-color: #4c56c0;
+    position: absolute;
+}
+
+.welcometext h3 {
+    text-align: center;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.p-5 {
+    padding: 1.2rem 2rem !important;
+}
+
+.bg-lightblue {
+    background-color: #F5F6FA;
+}
+
+.welcometext p {
+    font-size: 14px;
+    color: #666666;
+    line-height: 19px;
+    text-align: center;
+    margin-bottom:12px;
+}
+
+.form-group {
+    margin-bottom: 0.3rem;
+    position: relative;
+}
+
+#pswd-info {
+    background-color: #FFF;
+    position: absolute;
+    padding: 20px;
+    box-shadow: 0px 1px 10px 1px rgb(0 0 0 / 22%);
+    right: -258px;
+    z-index: 1;
+    top: -35px;
+    display: none;
+}
+
+    #pswd-info h6 {
+        font-weight: 600;
+        font-size: 15px;
+    }
+
+    #pswd-info ul {
+        margin-bottom: 0px;
+        padding-left: 6px;
+        list-style: none;
+        font-size: 14px;
+        color: #828282;
+    }
+
+.arrow_box:after, .arrow_box:before {
+    right: 100%;
+    top: 50%;
+    border: solid transparent;
+    content: "";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+}
+
+.arrow_box:after {
+    border-color: rgba(136, 183, 213, 0);
+    border-right-color: #ffffff;
+    border-width: 10px;
+    margin-top: -4px;
+}
+
+.arrow_box:before {
+    border-color: rgba(194, 225, 245, 0);
+    border-right-color: #e5e5e56b;
+    border-width: 13px;
+    margin-top: -7px;
+}
+
+.w-email {
+    width: 61.75px;
+}
+
+.w-cpassword {
+    width: 123px;
+}
+
+.linkmessage {
+    padding: 5rem 2rem !important;
+}
+
+.welcometext p.expirytime {
+    font-size: 24px;
+    font-weight: 400;
+    color: #ff7575;
+    font-variant: petite-caps;
+    margin-bottom: 0;
+}
+
+    .welcometext p.expirytime i {
+        font-size: 34px;
+        vertical-align: middle;
+        margin-top: -3px;
+    }
+
+.btn-login:hover {
+    color: #FFF;
+    opacity: 0.8;
+}
+
+.successimage {
+    width: 100px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.failerimage {
+    width: 130px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+.invalid, .valid {
+    padding-left: 22px;
+    line-height: 24px;
+    list-style: none;
+}
+
+.invalid {
+    background: url('../img/error.png') no-repeat 0 50%;
+    color: #ec3f41;
+}
+
+.valid {
+    background: url('../img/success-small.png') no-repeat 0 50%;
+    color: #3a7d34;
+}
+
+.error-msg {
+    position: absolute;
+    bottom: 88px;
+    color: red;
+    font-size: 13px;
+    margin-bottom: 0px;
+    width: 100%;
+}
+
+.border-danger{
+    border-color: red !important;
+}
+
+.text-red {
+    color: red !important;
+}
+
+.btn-activatecaptchareload {
+    margin-left: 10px;
+    color: #4c56c0 !important;
+    font-size: 18px !important;
+    padding: 0px;
+    margin-top: 0px;
+    box-shadow: none !important;
+    margin-right: 10px;
+}
+
+.captchaimg {
+    width: 81%;
+    height: 38px;
+    margin-top: 6px;
+    margin-bottom: 6px;
+    border-radius: 6px;
+}
+
+.btn-captchareload {
+    margin-top: 0px;
+}
+
+.captchatext {
+    height: 44px;
+}
+

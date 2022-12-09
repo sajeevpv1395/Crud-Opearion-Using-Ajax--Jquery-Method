@@ -1,0 +1,75 @@
+﻿
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+<!-- Button trigger modal -->
+<button  class="btn btn-primary" id="btnAddEmployee">
+  AddEmployee
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="EmployeeModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">AddEmployee</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+          <form method="post">
+                        <div class="form-group">
+    <label>Name</label>
+    <input type="text" class="form-control" id="EmployeeId" disabled="disabled" />
+</div>
+              <div class="form-group">
+    <label>Name</label>
+    <input type="text" placeholder="Enter Name" class="form-control" id="Name" autocomplete="off" />
+</div>
+   <div class="form-group">
+    <label>Place</label>
+    <input type="text" placeholder="Enter place" class="form-control" id="Place" autocomplete="off" />
+</div>
+<div class="form-group">
+    <label>Email</label>
+    <input type="email" placeholder="Enter Email" class="form-control" id="Email" autocomplete="off" />
+</div>
+<div class="form-group">
+    <label>PhoneNumber</label>
+    <input type="number" placeholder="Enter Phone number" class="form-control" id="PhoneNumber" autocomplete="off" />
+</div>
+
+          </form>
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button class="btn btn-primary" id="AddEmployee" style="display:none"  onclick="AddEmployee()">Save</button>
+         <button class="btn btn-secondary" id="btnUpdate" onclick="">Update</button>
+      </div>
+    </div>
+  </div>
+</div>
+<table class="table table-bordered table-striped" style="width:100%"/>
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Name</th>
+            <th>Place</th>
+            <th>Email</th>   
+            <th>PhoneNumber</th>
+            <th>Operation</th>
+		</tr>
+	</thead>
+    <tbody id="table_data">
+     
+     
+    </tbody>
+
+   @* <input type="hidden" id="urlEmployeeData" value="@Url.Action("UserList","Ajax")"/>*@
+
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+  <script src="~/lib/jquery/dist/jquery.js"></script>
+   <script src="~/lib/jquery/dist/jquery.min.js"></script>
+       <script src="~/js/custom.js" asp-append-version="true"></script>

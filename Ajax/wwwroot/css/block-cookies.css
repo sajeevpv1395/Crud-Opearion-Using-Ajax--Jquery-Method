@@ -1,0 +1,51 @@
+/* JG 20180515 GDPR COOKIE POPUP */
+#cookiescript_injected{position:fixed;left:0px;bottom:0px;width:100%;z-index:9999;}
+#cookiescript_wrapper{position:relative;bottom:0px;padding:32px;padding-right:184px;font-size:15px;background-color:#333;color:#c4c4c4;min-height:60px;border-top:2px Solid #d2145a;max-width:1024px;margin:0px auto;box-shadow:0px -4px 16px rgba(0,0,0,.25);}
+p#cookiescript_desc{}
+h4#cookiescript_header{display:none;}
+
+#cookiescript_buttons{position:absolute;padding:32px;right:0px;top:0px;min-height:160px;}
+
+#cookiescript_buttons > div{font-weight:bold;line-height:1;width:120px;text-align:center;padding:6px 0;border:1px Solid #c4c4c4;text-transform:uppercase;border-radius:2px;margin-bottom:8px;font-size:12px;cursor:pointer;transition:all .25s ease-in-out;}
+#cookiescript_buttons > div:last-child{margin-bottom:0px;}
+
+#cookiescript_buttons #cookiescript_accept{}
+#cookiescript_buttons #cookiescript_reject {display: none;}
+#cookiescript_buttons #cookiescript_readmore{}
+
+#cookiescript_buttons #cookiescript_accept:hover{border-color:#68fcf7;background-color:#68fcf7;color:#1e2b49;}
+#cookiescript_buttons #cookiescript_reject:hover{border-color:#d2145a;background-color:#d2145a;color:#fff;}
+#cookiescript_buttons #cookiescript_readmore:hover{border-color:#fff;background-color:#fff;color:#1e2b49;}
+#cookiescript_link{display:none !important;}
+
+
+#cookiescript_badge{position: fixed;width: 48px;height: 48px;display: none;cursor: pointer;z-index: 999;left:8px;bottom:8px;}
+#cookiescript_badge_wrapper{background-color:rgba(0,0,0,.25);padding:6px;width: 48px;height: 48px;}
+#cookiescript_badge_wrapper svg{fill:#fff;height:36px;width:36px;transition:all .25s ease-in-out;}
+#cookiescript_badge_wrapper:hover svg{fill:#68fcf7;}
+
+@media (max-width: 1024px){
+	#cookiescript_injected{padding:0 64px;}
+	#cookiescript_wrapper{font-size:14px;}
+}
+
+@media (max-width: 760px){
+	#cookiescript_injected{padding:0 32px;}
+	#cookiescript_wrapper{padding:16px;font-size:14px;}
+	#cookiescript_buttons{position:relative;margin-top:16px;min-height:0px;padding:0px;text-align:center;}
+	
+	
+	#cookiescript_buttons > div{padding:6px 0px;font-size:11px;max-width:none;width:100px;}
+	#cookiescript_buttons > div{display:inline-block;margin-bottom:0px;margin-right:16px;}
+	#cookiescript_buttons > div:last-child{margin-right:0px;}
+}
+@media (max-width: 600px){
+	#cookiescript_injected{padding:0 16px;}
+}
+@media (max-width: 430px){
+		#cookiescript_buttons > div{padding:6px 10px;font-size:10px;width:auto;margin-right:8px;}
+}
+@media (max-width: 330px){
+		#cookiescript_buttons > div{padding:6px 10px;font-size:10px;width:auto;margin-right:8px;}
+	
+}

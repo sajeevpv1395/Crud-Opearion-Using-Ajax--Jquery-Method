@@ -1,0 +1,348 @@
+﻿body {
+    font-family: 'Lato', sans-serif !important;
+    background-color: #E5E6E6 !important;
+    text-rendering: optimizeLegibility !important;
+    -webkit-font-smoothing: antialiased !important;
+    font-size: 13px;
+}
+
+.cookie-header {
+    margin-top: 1rem;
+}
+
+.r-cookie {
+    width: 100%;
+    font-size: 100%;
+    font-size: 14pt;
+    color: #555;
+    font-family: 'Lato', sans-serif !important;
+    background-color: #fff;
+    overflow-x: hidden;
+    line-height: 1.5;
+}
+
+    .r-cookie p a, .r-cookie ul li a, .r-cookie ol li a {
+        color: #00ADEF;
+        font-weight: 600;
+        text-decoration: none;
+        font-size: 13px;
+    }
+
+    .r-cookie .container {
+        max-width: 1280px;
+        margin: 20px auto;
+        padding: 0px 32px;
+        position: relative;
+    }
+
+    .r-cookie * {
+        margin: 0px;
+        box-sizing: border-box;
+    }
+
+    .r-cookie p, .r-cookie h3, .r-cookie h2 {
+        margin-bottom: 10px;
+        font-size: 13px;
+    }
+
+    .r-cookie .section.white {
+        background-color: #fff;
+        color: inherit;
+    }
+
+    .r-cookie ul + p {
+        margin-top: 16px;
+    }
+
+    .r-cookie td, .r-cookie th {
+        border: 1px solid #dddddd;
+        text-align: left;
+        padding: 8px 12px;
+    }
+
+    .r-cookie .standardtable tbody, .r-cookie tbody td {
+        text-align: left;
+        vertical-align: top;
+        font-weight: normal;
+    }
+
+    .r-cookie p.mainhead {
+        font-size: 18px;
+        line-height: 24px;
+        margin: 15px 0 0 0;
+        color: #fff;
+        text-align: left;
+        background: #48536f;
+        padding: 6px 27px 6px 27px;
+        display: inline-block;
+        text-transform: capitalize;
+        position: relative;
+    }
+
+        .r-cookie p.mainhead:before {
+            content: "";
+            position: absolute;
+            width: 0px;
+            height: 0px;
+            border-top: 0 solid #fff;
+            border-right: 0px solid #fff;
+            border-bottom: 36px solid #48536f;
+            border-left: 20px solid #fff;
+            left: 0;
+            top: 0;
+        }
+
+        .r-cookie p.mainhead:after {
+            content: "";
+            position: absolute;
+            width: 0px;
+            height: 0px;
+            border-top: 36px solid #fff;
+            border-right: 0px solid #fff;
+            border-bottom: 36px solid #fff;
+            border-left: 20px solid #48536f;
+            right: 0;
+            top: 0;
+        }
+
+    .r-cookie p.subhead {
+        font-size: 18px !important;
+        line-height: normal !important;
+        margin: 15px 0 8px 0;
+        color: #1D1D1D !important;
+        text-align: left;
+    }
+
+    .r-cookie table td {
+        padding: 10px;
+        font-size: 14px;
+        line-height: 18px;
+    }
+
+    .r-cookie table th {
+        color: #333333;
+        background: #eae5e566;
+        font-family: 'Lato', sans-serif !important;
+        padding: 10px;
+        font-size: 11.7px;
+        font-weight: bold !important;
+        line-height: 18px;
+    }
+
+    .r-cookie tbody tr:nth-child(2n) td {
+        background-color: #f9f7f5;
+    }
+
+    .r-cookie tbody tr:hover td {
+        color: #555555;
+        background-color: #dadde052;
+        cursor: pointer;
+    }
+
+    .r-cookie .limiter {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .r-cookie .container-table100 {
+        width: 100%;
+        min-height: 100vh;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .r-cookie .wrap-table100 {
+        width: 100%;
+        margin-bottom: 40px;
+    }
+
+    .r-cookie table {
+        border-spacing: 1;
+        border-collapse: collapse;
+        background: white;
+        overflow: hidden;
+        width: 100%;
+        margin: 0 auto;
+        position: relative;
+    }
+
+        .r-cookie table * {
+            position: relative;
+        }
+
+        .r-cookie table td, .r-cookie table th {
+            padding-left: 8px;
+        }
+
+        .r-cookie table tbody tr:last-child {
+            border: 0;
+        }
+
+        .r-cookie table td, .r-cookie table th {
+            text-align: left;
+        }
+
+            .r-cookie table td.l, .r-cookie table th.l {
+                text-align: right;
+            }
+
+            .r-cookie table td.c, .r-cookie table th.c {
+                text-align: center;
+            }
+
+            .r-cookie table td.r, .r-cookie table th.r {
+                text-align: center;
+            }
+
+    .r-cookie tbody tr {
+        font-size: 15px;
+        color: #808080;
+        line-height: 1.2;
+    }
+
+@@media screen and (max-width: 992px) {
+    .r-cookie .wrap-table100 {
+        margin-bottom: 10px;
+    }
+
+    .r-cookie .container.cookies-container {
+        padding: 0 15px;
+    }
+
+    .r-cookie table {
+        display: block;
+    }
+
+        .r-cookie table > *, .r-cookie table tr, .r-cookie table td, .r-cookie table th {
+            display: block;
+        }
+
+        .r-cookie table thead {
+            display: none;
+        }
+
+        .r-cookie table tbody tr {
+            height: auto;
+            padding: 0;
+            border-bottom: 1px solid #ccc;
+        }
+
+            .r-cookie table tbody tr td {
+                padding: 7px !important;
+                padding-left: 40% !important;
+                margin-bottom: -1px;
+                border: 0;
+            }
+
+                .r-cookie table tbody tr td:last-child {
+                    margin-bottom: 0;
+                    min-height: 32px;
+                }
+
+                .r-cookie table tbody tr td:before {
+                    position: absolute;
+                    width: 37%;
+                    left: 10px;
+                    top: 8px;
+                    line-height: 14px;
+                    font-size: 14px;
+                }
+
+    .r-cookie tbody tr:nth-child(2n+1) td {
+        background: #efedeb;
+    }
+
+    .r-cookie #content p.mainhead {
+        border-radius: 0;
+        padding: 10px 10px 10px 0px;
+        display: block;
+        color: #48536f;
+        background: transparent;
+    }
+
+    .r-cookie table.strictly-cookies tbody tr td:nth-child(1):before {
+        content: "Description";
+    }
+
+    .r-cookie table.strictly-cookies tbody tr td:nth-child(2):before {
+        content: "First Party";
+    }
+
+    .r-cookie table.strictly-cookies tbody tr td:nth-child(3):before {
+        content: "How to disable these cookies";
+    }
+
+    .r-cookie table.list-of-strictly-cookies tbody tr td:nth-child(1):before {
+        content: "Cookie name";
+    }
+
+    .r-cookie table.list-of-strictly-cookies tbody tr td:nth-child(2):before {
+        content: "Data Stored";
+    }
+
+    .r-cookie table.list-of-strictly-cookies tbody tr td:nth-child(3):before {
+        content: "Lifespan";
+    }
+
+    .r-cookie table.list-of-strictly-cookies tbody tr td:nth-child(4):before {
+        content: "Purpose";
+        font-family: 'Lato', sans-serif !important;
+        font-size: 14px;
+    }
+
+    .r-cookie .column4, .r-cookie .column5, .r-cookie .column6 {
+        text-align: left;
+    }
+
+    .r-cookie .column4, .r-cookie .column5, .r-cookie .column6, .r-cookie .column1, .r-cookie .column2, .r-cookie .column3 {
+        width: 100%;
+    }
+
+    .r-cookie tbody tr {
+        font-size: 14px;
+    }
+
+    .r-cookie p.mainhead:before {
+        display: none;
+    }
+
+    .r-cookie p.mainhead:after {
+        display: none;
+    }
+}
+
+@@media (max-width: 576px) {
+    .r-cookie .container-table100 {
+        padding-left: 5px;
+        padding-right: 5px;
+        width: auto;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: flex;
+    }
+
+    .r-cookie .strictly-cookies td.column3 {
+        min-height: 43px;
+    }
+}
+
+.r-cookie .last-update {
+    padding-top: 20px;
+}
+
+.cookie-header {
+    font-size: 18px !important;
+    color: #1D1D1D !important;
+    line-height: normal !important;
+}
+
+.displayNone {
+    display: none !important;
+}
+
+.textAlignCentre {
+    text-align: center;
+}

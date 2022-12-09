@@ -1,0 +1,372 @@
+body {
+    font-family: "Lato",sans-serif;
+    background: #F5F6FA;
+}
+
+body, html {
+    height: 100%;
+}
+
+.bg-theme {
+    background-color: #4c56c0;
+}
+
+
+.accountArea {
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+    background: #ef0170;
+}
+
+.accountWrapper {
+    width: 95%;
+    display: flex;
+    flex-wrap: wrap;
+    background: #fff;
+    margin: auto;
+    box-shadow: 0px 0px 13px 1px rgb(0 0 0 / 22%);
+    border-radius: 5px;
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+    min-height: 90vh;
+}
+
+.accountWrapper .bgShaperight {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 0px;
+    z-index: -1;
+    width: 66.666667%;
+    height: 100%;
+    background: url(../images/loginbanner.jpg) top left / cover no-repeat;
+}
+.waveshape {
+    position: absolute;
+    width: 100%;
+    z-index: 1;
+    left: 0px;
+    height: 100%;
+}
+
+.waveshape svg {
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    right: 0px;
+    width: 110%;
+    transform: rotate(-90deg);
+}
+
+.waveshape svg path {
+    stroke: none;
+    fill: white;
+}
+
+.accountForm {
+    width: 33.333333%;
+    padding: 0px 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+}
+@font-face {
+    font-family: "BAD GRUNGE";
+    src: url("../fonts/9940eb554216bb36559f837fa4c0e73d.eot"); /* IE9*/
+    src: url("../fonts/9940eb554216bb36559f837fa4c0e73d.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+    url("../fonts/9940eb554216bb36559f837fa4c0e73d.woff2") format("woff2"), /* chrome firefox */
+    url("../fonts/9940eb554216bb36559f837fa4c0e73d.woff") format("woff"), /* chrome firefox */
+    url("../fonts/9940eb554216bb36559f837fa4c0e73d.ttf") format("truetype"); /* chrome firefox opera Safari, Android, iOS 4.2+*/
+}
+.fromTitle h2 {
+    font-family: "BAD GRUNGE";
+    font-size: 52px;
+    margin-bottom: 0px;
+    text-align: center;
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 0px;
+    color: #182c4a;
+}
+.fromTitle h2 span{
+    text-decoration: line-through;
+    font-family: fantasy;
+    font-size: 36px;
+    text-transform: uppercase;
+    font-weight: 900;
+    color: #182c4a;
+}
+
+.fromTitle img {
+    color: #182c4a;
+    margin-bottom: 15px;
+    width: 50px;
+    position: absolute;
+    left: 16px;
+    top: 16px;
+}
+.login-logo {
+    width: 240px;
+    margin-bottom: 15px;
+    margin-top: 20px;
+}
+.MuiFormControl-root {
+    border: 0;
+    margin: 0;
+    display: inline-flex;
+    padding: 0;
+    position: relative;
+    min-width: 0;
+    flex-direction: column;
+    vertical-align: top;
+}
+
+.MuiFormControl-fullWidth {
+    width: 100%;
+}
+
+.accountForm .formInput {
+    margin-bottom: 15px;
+}
+
+.MuiFormLabel-root {
+    color: rgba(0, 0, 0, 0.54);
+    padding: 0;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 14px;
+    letter-spacing: 0.00938em;
+    transition: color 200ms cubic-bezier(0.0, 0, 0.2, 1) 0ms,transform 200ms cubic-bezier(0.0, 0, 0.2, 1) 0ms;
+    z-index: 1;
+    pointer-events: none;
+    transform-origin: top left;
+    transform: translate(15px, 16px) scale(0.75);
+}
+
+.MuiInputBase-root {
+    color: rgba(0, 0, 0, 0.87);
+    cursor: text;
+    display: inline-flex;
+    position: relative;
+    font-size: 1rem;
+    box-sizing: border-box;
+    align-items: center;
+    line-height: 1.1875em;
+    color: #676B79;
+}
+
+.MuiInputBase-input {
+    width: 100%;
+    border: 0;
+    height: 53px;
+    margin: 0;
+    display: block;
+    background: none;
+    padding: 12px 14px 12px 40px;
+    outline: 0;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    font-size: 14px;
+    border-radius: 50px;
+    border: 1px solid transparent;
+    background: #fff;
+    box-shadow: 0 0 5px rgb(0 0 0 / 20%);
+    margin-bottom: 15px;
+    color: #757575;
+}
+
+.MuiInputBase-root i {
+    color: #c1c1c1;
+    left: 15px;
+    position: absolute;
+    top: 19px;
+}
+span.select-icon i {
+    color: #909090;
+}
+span.select-icon {
+    position: absolute;
+    right: 48px;
+    top: -4px;
+    font-size: 25px;
+    pointer-events:none;
+}
+.accountForm h3 {
+    font-size: 21px;
+    margin-top: 40px;
+    color: #313131;
+    margin-bottom: 30px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.jss163 {
+    top: -5px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    transition: padding-left 200ms cubic-bezier(0.0, 0, 0.2, 1) 0ms,border-color 200ms cubic-bezier(0.0, 0, 0.2, 1) 0ms,border-width 200ms cubic-bezier(0.0, 0, 0.2, 1) 0ms;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 4px;
+    pointer-events: none;
+    padding-left: 8px;
+    border: 1px solid #e5e5e5 !important;
+}
+
+.jss164 {
+    padding: 0;
+    text-align: left;
+    transition: width 200ms cubic-bezier(0.0, 0, 0.2, 1) 0ms;
+    line-height: 11px;
+    width: 81.75px;
+}
+
+.w-password {
+    width: 69px;
+}
+
+.w-domain {
+    width: 58px;
+}
+
+.showPassword {
+    cursor: pointer;
+    padding-right: 8px;
+    position: absolute;
+    right: 5px;
+    pointer-events: none;
+    font-size: 21px;
+}
+
+.accountForm .accountBtn {
+    font-size: 16px;
+    padding: 10px 20px;
+    background: #182c4a !important;
+    border: none;
+    color: #fff;
+    box-shadow: 0 0 5px rgb(0 0 0 / 20%);
+    border-radius: 50px;
+    margin-top: 13px;
+}
+
+.accountForm .accountBtn:hover {
+    color: #FFF;
+    background: #182c4a !important;
+}
+
+.bg-default {
+    background: #4c56c0 !important;
+}
+
+.MuiButton-root {
+    color: rgba(0, 0, 0, 0.87);
+    padding: 6px 16px;
+    font-size: 0.875rem;
+    min-width: 64px;
+    box-sizing: border-box;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,border 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+    font-weight: 500;
+    line-height: 1.75;
+    border-radius: 4px;
+    letter-spacing: 0.02857em;
+    text-transform: capitalize;
+}
+
+.error-msg {
+    position: absolute;
+    bottom: -25px;
+    color: red;
+    font-size: 13px;
+}
+
+
+
+
+
+span.divider {
+    width: 50%;
+    height: 2px;
+    background-color: #ccccccba;
+    content: "";
+    display: block;
+    margin: 12px auto;
+}
+
+.version-text {
+    font-size: 13px;
+    color: rgb(0 0 0 / 54%);
+    padding-top: 20px;
+}
+
+.login-footer {
+    font-size: 11px;
+    text-align: center;
+    position: absolute;
+    bottom: 10px;
+    font-weight: 600;
+    left: 0px;
+    right: 0px;
+}
+
+.sponser-text {
+    color: #565454 !important;
+    margin-top: 3px;
+    margin-left: 2px;
+    margin-bottom: 5px;
+}
+
+.copyright {
+    display: block;
+    color: #00000075;
+    margin-top: 5px;
+}
+.internal-login-error.error-msg {
+    bottom: -23px;
+    left: 0px;
+    right: 0px;
+    line-height: 16px;
+}
+
+input::-ms-reveal,
+input::-ms-clear {
+    display: none;
+}
+
+a.forgot-password, .goback {
+    font-size: 14px;
+    text-align: right;
+    color: #4c56c0;
+}
+.internal-login-error.error-msg.external-error {
+    bottom: 56px;
+    line-height:16px;
+}
+
+.btn-captchareload {
+    background-color: #4c56c0;
+    margin-left: 8px;
+    color: #ffffff !important;
+    font-size: 18px !important;
+    padding: 5px 14px 4px;
+    margin-top: -8px;
+    box-shadow: none !important;
+}
+.captchatext {
+    height: 56px;
+    border-color: #e5e5e5;
+    font-size: 14px;
+    box-shadow: none !important;
+}
+.btn-captchareload:hover {
+    background-color: #4c56c0;
+}

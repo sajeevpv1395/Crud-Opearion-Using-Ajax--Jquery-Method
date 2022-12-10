@@ -2,7 +2,7 @@
 @{
     ViewData["Title"] = "Index";
 }
-
+<link rel="stylesheet" type="text/css" href="DataTables/datatables.min.css"/>
 <h1>Index</h1>
 <!-- Button trigger modal -->
 <button  class="btn btn-primary" id="btnAddEmployee">
@@ -45,7 +45,7 @@
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-        <button class="btn btn-primary" id="AddEmployee" style="display:none"  onclick="AddEmployee()">Save</button>
+        <button class="btn btn-primary" id="AddEmployee"   onclick="AddEmployee()">Save</button>
          <button class="btn btn-secondary" id="btnUpdate" onclick="">Update</button>
       </div>
     </div>
@@ -73,3 +73,6 @@
   <script src="~/lib/jquery/dist/jquery.js"></script>
    <script src="~/lib/jquery/dist/jquery.min.js"></script>
        <script src="~/js/custom.js" asp-append-version="true"></script>
+
+       
+ 

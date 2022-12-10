@@ -40,6 +40,11 @@ function showEmployeedata() {
     })
 }
 
+
+$("#AddEmployee").click(function () {
+    AddEmployeeData();
+});
+
 ////////Add data to database using form data using post method
 
 function AddEmployeeData() { 
@@ -115,10 +120,10 @@ function Edit(id) {
             $('#Place').val(response.place);
             $('#Email').val(response.email);
             $('#PhoneNumber').val(response.phoneNumber);
-            //$('#AddEmployee').css('display', 'none');
-            //$('#btnUpdate').css('display', 'block');
-            $('#AddEmployee').hide();
-            $('#btnUpdate').show();
+            $('#AddEmployee').css('display', 'none');
+            $('#btnUpdate').css('display', 'block');
+            //$('#AddEmployee').hide();
+            //$('#btnUpdate').show();
         },
         error: function () {
             alert('data  not found')
@@ -126,7 +131,7 @@ function Edit(id) {
     })
 }
 
-function UpdateEmployee() {
+function UpdateEmployee() { 
     var objData = {
         EmployeeId: $("#EmployeeId").val(),
         Name: $("#Name").val(),
@@ -141,8 +146,8 @@ function UpdateEmployee() {
         contentType: 'application/x-www-form-urlencoded;charset=utf-8',
         dataType: 'json',
         success: function () {
-            alert('data saved');
-            HideMOdalPopUp();
+            alert('data saved 1');
+            HideModalPopUp();
             ClearTextBox();
         },
         error: function () {
@@ -151,3 +156,6 @@ function UpdateEmployee() {
     })
     
 }
+$("#btnUpdate").click(function () {
+    UpdateEmployee();
+});

@@ -25,6 +25,7 @@ namespace Ajax.Controllers
         }
 
         [HttpPost]
+        
         public JsonResult AddEmployee(User employee)
         {
             var emp = new User()
@@ -56,9 +57,26 @@ namespace Ajax.Controllers
         [HttpPost]
         public JsonResult Update(User employee)
         {
-          _db.Users.Update(employee);
-          _db.SaveChanges();
-           return new JsonResult("data updated");
+            var data = _db.Users.Where(e => e.Id == employee.Id).SingleOrDefault();
+            if(data != null)
+            {
+                data.Name = employee.Name;
+                data.Place = employee.Place;
+                data.Email = employee.Email;
+                data.PhoneNumber = employee.PhoneNumber;
+                _db.Users.Update(data);
+                _db.SaveChanges();
+                return new JsonResult("data updated");
+            }
+            else
+            {
+                return new JsonResult("data updated failed");
+            }
+         
+
+            //_db.Users.Update(employee);
+            //_db.SaveChanges();
+            // return new JsonResult("data updated");
         }
     }
 }

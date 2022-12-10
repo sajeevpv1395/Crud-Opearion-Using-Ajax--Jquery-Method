@@ -13,25 +13,109 @@ namespace Ajax.Controllers
         {
             _db = db;
         }
-        //   public IActionResult Index()
-        //   {
-        //       IEnumerable<User> objUserList = _db.Users;
-        //       return View(objUserList);
-        //   }
-        //[HttpPost]
-        //public JsonResult AddEmployee(User employee)
-        //{
-        //    var emp = new User()
-        //    {
-        //        Name = employee.Name,
-        //        Place = employee.Place,
-        //        Email = employee.Email,
-        //        PhoneNumber = employee.PhoneNumber,
-        //    };
-        //    _db.Users.Add(emp);
-        //    _db.SaveChanges();
-        //    return new JsonResult(emp);
-        //}
+        public IActionResult Index()
+        {
+            IEnumerable<User> objUserList = _db.Users;
+            return View(objUserList);
+        }
+        //GET
+        public IActionResult Create()
+        {
+            return View();
+        }
+
+        //POST
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public IActionResult Create(User obj)
+        {
+            if (obj.Name == obj.Place.ToString())
+            {
+                ModelState.AddModelError("name", "The DisplayOrder cannot exactly match the Name.");
+            }
+            if (ModelState.IsValid)
+            {
+                _db.Users.Add(obj);
+                _db.SaveChanges();
+                TempData["success"] = "Category created successfully";
+                return RedirectToAction("Index");
+            }
+            return View(obj);
+        }
+
+        //GET
+        public IActionResult Edit(int? id)
+        {
+            if (id == null || id == 0)
+            {
+                return NotFound();
+            }
+            var categoryFromDb = _db.Users.Find(id);
+            //var categoryFromDbFirst = _db.Categories.FirstOrDefault(u=>u.Id==id);
+            //var categoryFromDbSingle = _db.Categories.SingleOrDefault(u => u.Id == id);
+
+            if (categoryFromDb == null)
+            {
+                return NotFound();
+            }
+
+            return View(categoryFromDb);
+        }
+
+        //POST
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public IActionResult Edit(User obj)
+        {
+            if (obj.Name == obj.Place.ToString())
+            {
+                ModelState.AddModelError("name", "The DisplayOrder cannot exactly match the Name.");
+            }
+            if (ModelState.IsValid)
+            {
+                _db.Users.Update(obj);
+                _db.SaveChanges();
+                TempData["success"] = "Category updated successfully";
+                return RedirectToAction("Index");
+            }
+            return View(obj);
+        }
+
+        public IActionResult Delete(int? id)
+        {
+            if (id == null || id == 0)
+            {
+                return NotFound();
+            }
+            var categoryFromDb = _db.Users.Find(id);
+            //var categoryFromDbFirst = _db.Categories.FirstOrDefault(u=>u.Id==id);
+            //var categoryFromDbSingle = _db.Categories.SingleOrDefault(u => u.Id == id);
+
+            if (categoryFromDb == null)
+            {
+                return NotFound();
+            }
+
+            return View(categoryFromDb);
+        }
+
+        //POST
+        [HttpPost, ActionName("Delete")]
+        [ValidateAntiForgeryToken]
+        public IActionResult DeletePOST(int? id)
+        {
+            var obj = _db.Users.Find(id);
+            if (obj == null)
+            {
+                return NotFound();
+            }
+
+            _db.Users.Remove(obj);
+            _db.SaveChanges();
+            TempData["success"] = "Category deleted successfully";
+            return RedirectToAction("Index");
+
+        }
 
     }
 }
